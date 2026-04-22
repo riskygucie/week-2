@@ -2,14 +2,20 @@
 
 public class main {
     public static void main(String[] args) {
-        Produk p = new Produk("indomie goreng", 3500, 100, "makanan");
-        
-        System.out.println(p.stok);
-        System.out.println(p.harga);
-        System.out.println(p.kategori);
-        System.out.println(p.nama);
-        System.out.println();
+    Produk p = new Produk("baju", 100000.0 , 6 ,"uniqlo"  );
+        System.out.println(p.getnama());
 
-        p.tampilinfo();
+        System.out.println(p.getharga());
+
+        p.setharga(200000);
+        System.out.println(p.getharga());
+
+        System.out.println(p.getstok());
+
+        p.setstok(10);
+        System.out.println(p.getstok());
+
+        System.out.println(p.getkategori());
+        
     }
 }

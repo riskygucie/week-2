@@ -22,6 +22,10 @@ public class Produk {
     public  int getstok(){
         return stok;
     } 
+    public  String getkategori(){
+        return kategori;
+    } 
+
 
     public void setharga (double harga){
         this.harga = harga;
