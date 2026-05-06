@@ -1,45 +1,8 @@
 
 
-public class Produk {
-    private String nama;
-    String kategori;
+abstract class Produk {
+       private String nama;
     private double harga;
     private int stok;
 
-    public  Produk (String nama, double harga, int stok, String kategori){
-            this.nama = nama;
-            this.harga = harga;
-            this.stok = stok;
-            this.kategori = kategori;
-    }
-
-    public String getnama(){
-        return nama;
-    } 
-    public double getharga(){
-        return harga;
-    } 
-    public  int getstok(){
-        return stok;
-    } 
-    public  String getkategori(){
-        return kategori;
-    } 
-
-
-    public void setharga (double harga){
-        this.harga = harga;
-    }
-    
-    public void setstok (int stok){
-        this.stok = stok;
-    }
-
-    public void tampilinfo (){
-        System.out.println("product     : " + nama);
-        System.out.println("Kategori     : " + kategori);
-        System.out.println("Harga     : Rp." + harga);
-        System.out.println("Stock     : " + stok);
-        System.out.println("----------");
-    }
     }
