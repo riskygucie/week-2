@@ -13,5 +13,15 @@ public class main {
         indomie.tampilinfo();
         roti.tampilinfo();    
 
+         System.out.println("\n==== RINCIAN PAJAK ELEKTRONIK ====");
+
+        double pajakLaptop = laptop.hitungPajak(1);
+        double totalLaptop = laptop.hitungHargaSetelahPajak(1);
+        System.out.println("Laptop x1 (PPN standar 11%):");
+        System.out.println("Subtotal : Rp" + laptop.hitungTotalHarga(1));
+        System.out.println("Pajak    : Rp" + pajakLaptop);
+        System.out.println("Total    : Rp" + totalLaptop);
+
+
     }
 }
