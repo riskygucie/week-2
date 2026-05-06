@@ -7,5 +7,15 @@ public class elektronik extends Produk {
         super(nama, harga, stok);
         this.merek = merek;
         this.garansiTahun = garansiTahun;
+
     }
+
+    public String getMerek() {
+        return merek;
+    }
+
+    public int getGaransiTahun() {
+        return garansiTahun;
+    }
+    
 }
