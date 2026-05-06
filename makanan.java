@@ -7,6 +7,13 @@ public class makanan extends Produk {
         this.kedaluwarsa = kedaluwarsa;
         this.kategori = kategori;
     }
+     public String getKedaluwarsa() {
+        return kedaluwarsa;
+    }
+
+    public String getKategori() {
+        return kategori;
+    }
 
 
 }
