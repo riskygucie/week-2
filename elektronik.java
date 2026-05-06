@@ -25,6 +25,10 @@ public class elektronik extends Produk {
         System.out.println("Merek    : " + merek);
         System.out.println("Garansi  : " + garansiTahun + " tahun");
         System.out.println("----------");
+
+        public double hitungDiskon(int jumlahBeli) {
+        return hitungTotalHarga(jumlahBeli) * PPN;
+    }
     }
 
 }
