@@ -2,20 +2,10 @@
 
 public class main {
     public static void main(String[] args) {
-    Produk p = new Produk("baju", 100000.0 , 6 ,"uniqlo"  );
-        System.out.println(p.getnama());
+        elektronik laptop = new elektronik("Laptop Asus", "Asus", 8500000, 10, 2);
+        elektronik hp = new elektronik("HP Samsung", "Samsung", 3200000, 25, 1);
+        makanan indomie = new makanan("Indomie Goreng", 3500, 100, "2026-12-01", "Mie Instan");
+        makanan roti = new makanan("Roti Tawar", 8000, 50, "2026-04-30", "Roti");
 
-        System.out.println(p.getharga());
-
-        p.setharga(200000);
-        System.out.println(p.getharga());
-
-        System.out.println(p.getstok());
-
-        p.setstok(10);
-        System.out.println(p.getstok());
-
-        System.out.println(p.getkategori());
-        
     }
 }
