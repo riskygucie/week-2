@@ -17,10 +17,16 @@ public class makanan extends Produk {
         @Override
     public void tampilinfo() {
         System.out.println("[MAKANAN]");
-        System.out.println("Nama        : " + getNama());
+        System.out.println("Nama        : " + getnama());
         System.out.println("Kategori    : " + kategori);
         System.out.println("Kedaluwarsa : " + kedaluwarsa);
         System.out.println("----------");
+    }
+     public double hitungDiskon(int jumlahBeli) {
+        if (jumlahBeli >= 10) {
+            return hitungTotalHarga(jumlahBeli) * 0.05;
+        }
+        return 0;
     }
 
 
