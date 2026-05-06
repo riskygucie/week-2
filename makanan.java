@@ -28,6 +28,18 @@ public class makanan extends Produk {
         }
         return 0;
     }
+public double hitungDiskon(int jumlahBeli, double persenDiskon) {
+        return hitungTotalHarga(jumlahBeli) * (persenDiskon / 100);
+    }
+
+    public double hitungHargaSetelahDiskon(int jumlahBeli) {
+        return hitungTotalHarga(jumlahBeli) - hitungDiskon(jumlahBeli);
+    }
+
+    @Override
+    public double hitungPajak(double harga) {
+        return harga * 0.10;
+    }
 
 
 }
