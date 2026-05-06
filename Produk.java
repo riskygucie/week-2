@@ -29,4 +29,8 @@ abstract class Produk {
     public void setStok(int stok) {
         this.stok = stok;
     }
+      public double hitungTotalHarga(int jumlahBeli) {
+        return harga * jumlahBeli;
+    }
+
 }
