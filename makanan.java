@@ -14,6 +14,14 @@ public class makanan extends Produk {
     public String getKategori() {
         return kategori;
     }
+        @Override
+    public void tampilinfo() {
+        System.out.println("[MAKANAN]");
+        System.out.println("Nama        : " + getNama());
+        System.out.println("Kategori    : " + kategori);
+        System.out.println("Kedaluwarsa : " + kedaluwarsa);
+        System.out.println("----------");
+    }
 
 
 }
