@@ -50,4 +50,9 @@ abstract class Produk {
                 " = Rp" + hitungTotalHarga(jumlahBeli) +
                 " | Sisa stok: " + stok);
     }
+
+    public abstract void tampilinfo();
+
+    public abstract double hitungPajak(double harga);
+
 }
