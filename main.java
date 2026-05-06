@@ -29,12 +29,16 @@ public class main {
         System.out.println("Total    : Rp" + (hp.hitungTotalHarga(2) + pajakHpCustom));
 
          System.out.println("\n==== RINCIAN DISKON MAKANAN ====");
-         
+
           System.out.println("Indomie x10 (diskon otomatis):");
         System.out.println("Subtotal : Rp" + indomie.hitungTotalHarga(10));
         System.out.println("Diskon   : Rp" + indomie.hitungDiskon(10));
         System.out.println("Total    : Rp" + indomie.hitungHargaSetelahDiskon(10));
 
+        System.out.println("\nRoti x5 (diskon custom 15%):");
+        System.out.println("Subtotal : Rp" + roti.hitungTotalHarga(5));
+        System.out.println("Diskon   : Rp" + roti.hitungDiskon(5, 15));
+        System.out.println("Total    : Rp" + (roti.hitungTotalHarga(5) - roti.hitungDiskon(5, 15)));
 
     }
 }
