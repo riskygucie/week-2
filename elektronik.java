@@ -1,4 +1,4 @@
-public class elektronik extends Produk {
+class elektronik extends Produk {
     private String merek;
     private int garansiTahun;
 

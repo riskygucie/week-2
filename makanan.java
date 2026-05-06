@@ -1,4 +1,4 @@
-public class makanan extends Produk {
+ class makanan extends Produk {
      private String kedaluwarsa;
     private String kategori;
 
