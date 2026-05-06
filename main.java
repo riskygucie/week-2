@@ -22,6 +22,10 @@ public class main {
         System.out.println("Pajak    : Rp" + pajakLaptop);
         System.out.println("Total    : Rp" + totalLaptop);
 
-
+           double pajakHpCustom = hp.hitungPajak(2, 5);
+        System.out.println("\nHP Samsung x2 (pajak custom 5%):");
+        System.out.println("Subtotal : Rp" + hp.hitungTotalHarga(2));
+        System.out.println("Pajak    : Rp" + pajakHpCustom);
+        System.out.println("Total    : Rp" + (hp.hitungTotalHarga(2) + pajakHpCustom));
     }
 }
