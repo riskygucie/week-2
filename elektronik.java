@@ -29,6 +29,10 @@ public class elektronik extends Produk {
         public double hitungDiskon(int jumlahBeli) {
         return hitungTotalHarga(jumlahBeli) * PPN;
     }
+
+    public double hitungDiskon(int jumlahBeli, double persenPajak) {
+        return hitungTotalHarga(jumlahBeli) * (persenPajak / 100);
+    }
     }
 
 }
