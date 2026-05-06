@@ -10,7 +10,7 @@ abstract class Produk {
         this.stok = stok;
     }
 
-    public String getNama() {
+    public String getnama() {
         return nama;
     }
 
