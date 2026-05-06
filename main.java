@@ -7,5 +7,11 @@ public class main {
         makanan indomie = new makanan("Indomie Goreng", 3500, 100, "2026-12-01", "Mie Instan");
         makanan roti = new makanan("Roti Tawar", 8000, 50, "2026-04-30", "Roti");
 
+        System.out.println("==== DAFTAR PRODUK ====");
+        laptop.tampilinfo(); 
+        hp.tampilinfo();     
+        indomie.tampilinfo();
+        roti.tampilinfo();    
+
     }
 }
