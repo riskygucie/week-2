@@ -2,11 +2,11 @@
 
 public class main {
     public static void main(String[] args) {
-        elektronik laptop = new elektronik("Laptop Asus", "Asus", 8500000, 10, 2);
-        elektronik hp = new elektronik("HP Samsung", "Samsung", 3200000, 25, 1);
-        makanan indomie = new makanan("Indomie Goreng", 3500, 100, "2026-12-01", "Mie Instan");
-        makanan roti = new makanan("Roti Tawar", 8000, 50, "2026-04-30", "Roti");
-
+        
+        Produk p1 = new Elektronik("Samsung", 100000, 5, 2);
+        Produk p2 = new Makanan("Bakso", 1000, 100, 3);
+        Kasir kasir = new Kasir("Maman");
+        
         System.out.println("==== DAFTAR PRODUK ====");
         laptop.tampilinfo(); 
         hp.tampilinfo();     
