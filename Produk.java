@@ -17,4 +17,18 @@ abstract class Produk {
     public int getStok() {
         return stok;
     }
-}
+        public void tampilInfo() {
+        System.out.println("===== Produk =====");
+        System.out.println("Nama: " + nama);
+        System.out.println("Harga: " + harga);
+        System.out.println("Stok: " + stok);
+    }
+
+    public double hitungTotalHarga(int jmlBeli) {
+        return jmlBeli * harga;
+    }
+
+    public abstract double hitungHargaAkhir(int jmlBeli);
+
+    }
+    
